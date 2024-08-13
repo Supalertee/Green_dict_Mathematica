@@ -1,0 +1,326 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10307,        316]
+NotebookOptionsPosition[      9830,        299]
+NotebookOutlinePosition[     10222,        315]
+CellTagsIndexPosition[     10179,        312]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"G", "=", 
+  TagBox[
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {
+       FractionBox[
+        RowBox[{"k1", "+", "\[Omega]"}], 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["b", "2"], "+", 
+          SuperscriptBox["k1", "2"], "+", 
+          SuperscriptBox["k2", "2"], "+", 
+          SuperscriptBox["k3", "2"], "-", 
+          SuperscriptBox["\[Omega]", "2"]}]]], 
+       FractionBox[
+        RowBox[{
+         RowBox[{"-", "k2"}], "+", 
+         RowBox[{"\[ImaginaryI]", " ", "k3"}]}], 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["b", "2"], "+", 
+          SuperscriptBox["k1", "2"], "+", 
+          SuperscriptBox["k2", "2"], "+", 
+          SuperscriptBox["k3", "2"], "-", 
+          SuperscriptBox["\[Omega]", "2"]}]]], "0", 
+       FractionBox[
+        RowBox[{"\[ImaginaryI]", " ", "b"}], 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["b", "2"], "+", 
+          SuperscriptBox["k1", "2"], "+", 
+          SuperscriptBox["k2", "2"], "+", 
+          SuperscriptBox["k3", "2"], "-", 
+          SuperscriptBox["\[Omega]", "2"]}]]]},
+      {
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"k2", "+", 
+          RowBox[{"\[ImaginaryI]", " ", "k3"}]}], 
+         SqrtBox[
+          RowBox[{
+           SuperscriptBox["b", "2"], "+", 
+           SuperscriptBox["k1", "2"], "+", 
+           SuperscriptBox["k2", "2"], "+", 
+           SuperscriptBox["k3", "2"], "-", 
+           SuperscriptBox["\[Omega]", "2"]}]]]}], 
+       FractionBox[
+        RowBox[{
+         RowBox[{"-", "k1"}], "+", "\[Omega]"}], 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["b", "2"], "+", 
+          SuperscriptBox["k1", "2"], "+", 
+          SuperscriptBox["k2", "2"], "+", 
+          SuperscriptBox["k3", "2"], "-", 
+          SuperscriptBox["\[Omega]", "2"]}]]], 
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"\[ImaginaryI]", " ", "b"}], 
+         SqrtBox[
+          RowBox[{
+           SuperscriptBox["b", "2"], "+", 
+           SuperscriptBox["k1", "2"], "+", 
+           SuperscriptBox["k2", "2"], "+", 
+           SuperscriptBox["k3", "2"], "-", 
+           SuperscriptBox["\[Omega]", "2"]}]]]}], "0"},
+      {"0", 
+       FractionBox[
+        RowBox[{"\[ImaginaryI]", " ", "b"}], 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["b", "2"], "+", 
+          SuperscriptBox["k1", "2"], "+", 
+          SuperscriptBox["k2", "2"], "+", 
+          SuperscriptBox["k3", "2"], "-", 
+          SuperscriptBox["\[Omega]", "2"]}]]], 
+       FractionBox[
+        RowBox[{"k1", "+", "\[Omega]"}], 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["b", "2"], "+", 
+          SuperscriptBox["k1", "2"], "+", 
+          SuperscriptBox["k2", "2"], "+", 
+          SuperscriptBox["k3", "2"], "-", 
+          SuperscriptBox["\[Omega]", "2"]}]]], 
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"k2", "+", 
+          RowBox[{"\[ImaginaryI]", " ", "k3"}]}], 
+         SqrtBox[
+          RowBox[{
+           SuperscriptBox["b", "2"], "+", 
+           SuperscriptBox["k1", "2"], "+", 
+           SuperscriptBox["k2", "2"], "+", 
+           SuperscriptBox["k3", "2"], "-", 
+           SuperscriptBox["\[Omega]", "2"]}]]]}]},
+      {
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"\[ImaginaryI]", " ", "b"}], 
+         SqrtBox[
+          RowBox[{
+           SuperscriptBox["b", "2"], "+", 
+           SuperscriptBox["k1", "2"], "+", 
+           SuperscriptBox["k2", "2"], "+", 
+           SuperscriptBox["k3", "2"], "-", 
+           SuperscriptBox["\[Omega]", "2"]}]]]}], "0", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"-", "k2"}], "+", 
+         RowBox[{"\[ImaginaryI]", " ", "k3"}]}], 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["b", "2"], "+", 
+          SuperscriptBox["k1", "2"], "+", 
+          SuperscriptBox["k2", "2"], "+", 
+          SuperscriptBox["k3", "2"], "-", 
+          SuperscriptBox["\[Omega]", "2"]}]]], 
+       FractionBox[
+        RowBox[{
+         RowBox[{"-", "k1"}], "+", "\[Omega]"}], 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["b", "2"], "+", 
+          SuperscriptBox["k1", "2"], "+", 
+          SuperscriptBox["k2", "2"], "+", 
+          SuperscriptBox["k3", "2"], "-", 
+          SuperscriptBox["\[Omega]", "2"]}]]]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.7]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}], "\[NoBreak]", ")"}],
+   Function[BoxForm`e$, 
+    MatrixForm[BoxForm`e$]]]}]], "Input",
+ CellChangeTimes->{{3.932544555866838*^9, 3.932544556182724*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"04003c0e-6f7b-4c73-8ab9-626ffa8c9bcd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"k1", "+", "\[Omega]"}], 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["b", "2"], "+", 
+        SuperscriptBox["k1", "2"], "+", 
+        SuperscriptBox["k2", "2"], "+", 
+        SuperscriptBox["k3", "2"], "-", 
+        SuperscriptBox["\[Omega]", "2"]}]]], ",", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"-", "k2"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", "k3"}]}], 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["b", "2"], "+", 
+        SuperscriptBox["k1", "2"], "+", 
+        SuperscriptBox["k2", "2"], "+", 
+        SuperscriptBox["k3", "2"], "-", 
+        SuperscriptBox["\[Omega]", "2"]}]]], ",", "0", ",", 
+     FractionBox[
+      RowBox[{"\[ImaginaryI]", " ", "b"}], 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["b", "2"], "+", 
+        SuperscriptBox["k1", "2"], "+", 
+        SuperscriptBox["k2", "2"], "+", 
+        SuperscriptBox["k3", "2"], "-", 
+        SuperscriptBox["\[Omega]", "2"]}]]]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{"k2", "+", 
+        RowBox[{"\[ImaginaryI]", " ", "k3"}]}], 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox["b", "2"], "+", 
+         SuperscriptBox["k1", "2"], "+", 
+         SuperscriptBox["k2", "2"], "+", 
+         SuperscriptBox["k3", "2"], "-", 
+         SuperscriptBox["\[Omega]", "2"]}]]]}], ",", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"-", "k1"}], "+", "\[Omega]"}], 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["b", "2"], "+", 
+        SuperscriptBox["k1", "2"], "+", 
+        SuperscriptBox["k2", "2"], "+", 
+        SuperscriptBox["k3", "2"], "-", 
+        SuperscriptBox["\[Omega]", "2"]}]]], ",", 
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{"\[ImaginaryI]", " ", "b"}], 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox["b", "2"], "+", 
+         SuperscriptBox["k1", "2"], "+", 
+         SuperscriptBox["k2", "2"], "+", 
+         SuperscriptBox["k3", "2"], "-", 
+         SuperscriptBox["\[Omega]", "2"]}]]]}], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     FractionBox[
+      RowBox[{"\[ImaginaryI]", " ", "b"}], 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["b", "2"], "+", 
+        SuperscriptBox["k1", "2"], "+", 
+        SuperscriptBox["k2", "2"], "+", 
+        SuperscriptBox["k3", "2"], "-", 
+        SuperscriptBox["\[Omega]", "2"]}]]], ",", 
+     FractionBox[
+      RowBox[{"k1", "+", "\[Omega]"}], 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["b", "2"], "+", 
+        SuperscriptBox["k1", "2"], "+", 
+        SuperscriptBox["k2", "2"], "+", 
+        SuperscriptBox["k3", "2"], "-", 
+        SuperscriptBox["\[Omega]", "2"]}]]], ",", 
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{"k2", "+", 
+        RowBox[{"\[ImaginaryI]", " ", "k3"}]}], 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox["b", "2"], "+", 
+         SuperscriptBox["k1", "2"], "+", 
+         SuperscriptBox["k2", "2"], "+", 
+         SuperscriptBox["k3", "2"], "-", 
+         SuperscriptBox["\[Omega]", "2"]}]]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{"\[ImaginaryI]", " ", "b"}], 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox["b", "2"], "+", 
+         SuperscriptBox["k1", "2"], "+", 
+         SuperscriptBox["k2", "2"], "+", 
+         SuperscriptBox["k3", "2"], "-", 
+         SuperscriptBox["\[Omega]", "2"]}]]]}], ",", "0", ",", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"-", "k2"}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", "k3"}]}], 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["b", "2"], "+", 
+        SuperscriptBox["k1", "2"], "+", 
+        SuperscriptBox["k2", "2"], "+", 
+        SuperscriptBox["k3", "2"], "-", 
+        SuperscriptBox["\[Omega]", "2"]}]]], ",", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"-", "k1"}], "+", "\[Omega]"}], 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["b", "2"], "+", 
+        SuperscriptBox["k1", "2"], "+", 
+        SuperscriptBox["k2", "2"], "+", 
+        SuperscriptBox["k3", "2"], "-", 
+        SuperscriptBox["\[Omega]", "2"]}]]]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.932544557802724*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"8e827032-8df1-490c-aad1-289f3572f70a"]
+}, Open  ]]
+},
+WindowSize->{808, 842},
+WindowMargins->{{12, Automatic}, {Automatic, 24}},
+FrontEndVersion->"13.3 for Mac OS X x86 (64-bit) (June 3, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"437fe9d2-faee-4ca3-9e97-4261ad08c7d9"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4860, 140, 139, "Input",ExpressionUUID->"04003c0e-6f7b-4c73-8ab9-626ffa8c9bcd"],
+Cell[5443, 164, 4371, 132, 197, "Output",ExpressionUUID->"8e827032-8df1-490c-aad1-289f3572f70a"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
